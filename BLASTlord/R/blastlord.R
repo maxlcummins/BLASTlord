@@ -28,10 +28,10 @@ blastlord <- function(file, output, identity = 90, length = 90, writecsv = FALSE
   # Creates a list of column headers called colnames_blastout.
   # Ensure that these are correct for your blast output.
   # If you are using Max's blast.qsub script they should be the same...
-  c("scaffold","gene_title",	"gene_id",	"match_(%)",	"query_hit_length",
-    "subject_length",	"subject_end",	"subject_start",	"query_start",
-    "query_end",	"scaffold_length",	"mismatches",	"gaps",	"e-value",
-    "bitscore",	"sample_name") -> colnames_blastout
+  c("scaffold","gene_title",  "gene_id",  "match_(%)",  "query_hit_length",
+    "subject_length", "subject_end",  "subject_start",  "query_start",
+    "query_end",  "scaffold_length",  "mismatches", "gaps", "e-value",
+    "bitscore", "sample_name") -> colnames_blastout
 
   # Assigns the previous column names to the data frame created by read.delim in line 4
   colnames(file) <- colnames_blastout
