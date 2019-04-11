@@ -1,6 +1,21 @@
+# Installation:
+First install devtools:
+
+```
+install.packages("devtools")
+```
+
+Now install BLASTlord:
+```
+devtools::install_github("maxlcummins/BLASTlord")
+```
+
+# Usage
+
+blastlord(file = "~/Path_to_file/File.txt", output = "Test_run", identity = 95, length = 95, writecsv = TRUE)
+
 # BLASTlord
 An R script facilitating filtering of BLAST data.
-
 
 
 BLAST and some subsequent data processing takes place in bash before hit filtering is run in R.
