@@ -26,5 +26,27 @@ devtools::install_github("maxlcummins/BLASTlord")
 
 # Usage
 
+## Running BLASTlord
+
 blastlord(file = "~/Path_to_file/File.txt", output = "Test_run", identity = 95, length = 95, writecsv = TRUE)
+
+
+## Filtering for genes of interest
+
+```
+#install the pacakages below first
+#install.packages("magrittr")
+#install.packages("dplyr")
+library(magrittr)
+library(dplyr)
+
+
+
+co-occurence_object %>%
+  dplyr::filter(grepl("gene_of_interest_1", same_scaff)) %>%
+  dplyr::filter(grepl("gene_of_interest_2", same_scaff)) %>%
+  dplyr::filter(!grepl("gene_to_avoid_1", same_scaff)) %>%
+  View()
+```
+  
 
