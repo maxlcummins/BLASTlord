@@ -1,5 +1,5 @@
 # BLASTlord
-An R script facilitating filtering of BLAST data.
+An R package facilitating filtering of BLAST data.
 
 
 BLAST and some subsequent data processing takes place in bash before hit filtering is run in R.
